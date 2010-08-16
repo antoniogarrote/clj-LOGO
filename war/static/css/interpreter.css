@@ -1,0 +1,252 @@
+html {
+   overflow-y: scroll;
+}
+
+html, body {
+   color: black;
+   height: 100%;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   background-color: white;
+   font: 13px helvetica,arial,freesans,clean,sans-serif;
+}
+
+#change-language {
+   color: lightGray;
+   position: absolute;
+   top: 10px;
+   right: 10px
+}
+
+#change-language a {
+   color: lightBlue
+}
+
+#heading {
+   font-family: georgia;
+   font-size: 40px;
+   margin-top: 50px;
+   margin-bottom: 30px;
+   text-align: center;
+}
+
+#canvas {
+   margin-top: 30px;
+   margin-bottom: 30px
+}
+
+#repl {
+   margin-left: 10%;
+   margin-top: 30px;
+   margin-bottom: 30px;
+   position: relative;
+   width: 80%
+}
+
+#repl form {
+   border-radius: 5px 5px 5px 5px;
+   -moz-border-radius: 5px 5px 5px 5px;
+   background: none repeat scroll 0 0 #F1F1F1;
+   border: 2px solid #DDDDDD;
+   font-size: 12px;
+   padding: 20px;
+   position: relative
+}
+
+#logo-sentence-form {
+   float: left;
+   margin-bottom: 30px
+}
+
+#logo-sentence-form textarea {
+   margin-bottom: 20px;
+   margin-top: 20px
+}
+
+#reference {
+   float: right;
+   margin-bottom: 30px
+}
+
+table {
+   font: 10px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+   background-color: rgb(232, 238, 247);
+   border: 1px solid #BEDCE7;
+   overflow: hidden;
+   padding: 0.7em
+}
+
+th {
+   font: 13px helvetica,arial,freesans,clean,sans-serif
+}
+
+td {
+   padding: 5px
+}
+
+div#save-form {
+   border-radius: 5px 5px 5px 5px;
+   -moz-border-radius: 5px 5px 5px 5px;
+   background: none repeat scroll 0 0 #F1F1F1;
+   border: 2px solid #DDDDDD;
+   font-size: 12px;
+   margin-top: 40px;
+   float: left;
+   padding: 20px
+}
+
+div#save-form p {
+   margin-top: 5px;
+   margin-bottom: 10px
+}
+
+#sketch-title {
+   width: 400px
+}
+
+#sketch-author {
+   width: 400px
+}
+
+#sketch-code {
+   width: 400px
+}
+
+#save {
+   margin-top: 20px;
+   float: left
+}
+
+#test-session {
+   margin-left: 10px;
+   margin-top: 20px
+}
+
+/* Sketch show */
+
+#sketch-heading {
+   margin-left: 30%
+}
+
+#show-sketch-title {
+   font-family: georgia;
+   font-size: 40px;
+   margin-top: 50px;
+   margin-bottom: 30px;
+   margin-left: 20px
+}
+
+#show-sketch-author {
+   color: lightblue;
+   margin-right: 20px
+}
+
+#show-sketch-date {
+   color: lightGray;
+}
+
+#canvas-container {
+   margin-left: 20%;
+   margin-top: 20px;
+   margin-bottom: 20px
+}
+
+#show-sketch-code {
+   border-radius: 5px 5px 5px 5px;
+   -moz-border-radius: 5px 5px 5px 5px;
+   background: none repeat scroll 0 0 #F1F1F1;
+   border: 2px solid #DDDDDD;
+   font-size: 12px;
+   padding: 20px;
+   width: 500px;
+   margin-left: 28px
+}
+
+#edit-more {
+   margin-left: 28px
+}
+
+#latest-sketches {
+   float: right;
+   margin-top: 30px;
+   margin-right: 50px
+}
+
+.sketch-link {
+   margin: 10px;
+   width: 300px;
+   padding: 20px;
+   background-color: lightGreen;
+   border: 2px solid green
+}
+
+#mid-part {
+   margin-left: 10%;
+   margin-top: 30px;
+   margin-bottom: 30px;
+   position: relative;
+   width: 80%
+}
+
+.sketch-link a:link {
+   color: green
+}
+
+.sketch-link a:hover {
+   color: green
+}
+
+.sketch-link a:visited {
+   color: green
+}
+
+#edit-more {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+#edit-more a:link {
+  color: blue
+}
+
+#edit-more a:hover {
+  color: blue
+}
+
+#edit-more a:visited {
+  color: blue
+}
+
+#spinner {
+   width: 600px;
+   margin-top: 30px;
+   margin-bottom: 30px;
+   text-align: center;
+   padding-top: 160px;
+   padding-bottom: 160px
+}
+
+#about {
+   margin-top: 900px;
+   text-align: center;
+   padding: 40px;
+   color: lightGray
+}
+
+#about-show {
+   padding: 40px;
+   margin-left: 380px;
+   color: lightGray
+}
+
+#github {
+   float: right;
+   padding: 40px;
+   margin-right: 110px
+}

@@ -1,0 +1,48 @@
+<project name="logo-web.clj" basedir="." default="compile">
+
+  <property environment="env" />
+  <property name="classes.dir" value="war/WEB-INF/classes" />
+  <property name="lib.dir" value="war/WEB-INF/lib" />
+  <property name="src.dir" value="src" />
+  <property name="test.dir" value="test" />
+
+  <path id="project.classpath">
+    <pathelement path="${classes.dir}" />
+    <fileset dir="${lib.dir}">
+      <include name="**/*.jar" />
+    </fileset>
+  </path>
+
+  <target name="clean">
+    <delete dir="${classes.dir}" />
+  </target>
+
+  <target name="init">
+    <mkdir dir="${classes.dir}" />
+  </target>
+
+  <target name="compile" depends="clean,init">
+    <java classname="clojure.lang.Compile" fork="true">
+      <classpath>
+        <path location="${classes.dir}"/>
+        <path location="${src.dir}"/>
+        <fileset dir="${lib.dir}">
+          <include name="**/*.jar" />
+        </fileset>
+      </classpath>
+      <sysproperty key="clojure.compile.path" value="${classes.dir}"/>
+      <arg value="logo.core" />
+      <arg value="logo.persistence" />
+      <arg value="logo.templates" />
+      <arg value="logo.translations" />
+      <arg value="logo.servlet" />
+    </java>
+  </target>
+
+  <target name="war" depends="compile">
+     <war destfile="logo.war" webxml="war/WEB-INF/web.xml" basedir="war">
+     </war>
+   </target>
+
+
+</project>

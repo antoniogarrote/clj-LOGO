@@ -1,0 +1,9 @@
+# clj-LOGO
+
+a clojure interpreter for the LOGO programming language that runs on Google App Engine
+
+## License
+
+Copyright (C) 2010 Antonio Garrote
+
+Distributed under the LGPL license
