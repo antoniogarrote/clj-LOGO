@@ -230,8 +230,8 @@
 
    :github (condp = lang
              "es" "C&oacute;digo disponible en <a href='http://antoniogarrote.github.com/clj-logo'>Github</a>"
-             "en" "Source code available at <a href='http://antoniogarrote.github.com/clj-logo'>Github</a>"
-             "Source code available at <a href='http://antoniogarrote.github.com/clj-logo'>Github</a>")
+             "en" "Source code available at <a href='http://antoniogarrote.github.com/clj-LOGO'>Github</a>"
+             "Source code available at <a href='http://antoniogarrote.github.com/clj-LOGO'>Github</a>")
 
 ;   : (condp = lang
 ;         "es" ""
